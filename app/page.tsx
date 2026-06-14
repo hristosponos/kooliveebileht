@@ -132,32 +132,36 @@ export default function Home() {
         <button>READ MORE</button>
       </div>
     </section>
-    <section>
+    <section className={`${styles.section_padding} ${styles.blue_section}`}>
       <h2>Are You Satisfied?</h2>
-      <p>Meet the most advanced live website builder on WordPress. Featuring latest web technologies,enjoyable UX and the most beautiful design trends.</p>
+      <p>Meet the most advanced live website builder on WordPress. Featuring latest web technologies,enjoyable UX and the most beautiful design trends.</p>
     </section>
-    <footer>
-      <div className="footer-upper">
-        <div className="footer-menu footer-component">
-          <h6>MENU</h6>
-          <div className="footer-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+    <footer className={styles.footer}>
+      <div className={styles.footer_upper}>
+        <div className={styles.grid}>
+          <div className={`${styles.footer_menu} ${styles.footer_component}`}>
+            <h6>MENU</h6>
+            <div className={styles.footer_links}>
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Contact</a>
+            </div>
           </div>
-        </div>
-        <div className="footer-search footer-component">
-          <h6>SEARCH</h6>
-          <div>
-            <p>Looking for article or guideline for growing your business?</p>
-            <input type="text" placeholder="Search" className="footer-searchbar"/>
+          <div className={`${styles.footer_search} ${styles.footer_component}`}>
+            <h6>SEARCH</h6>
+            <div>
+              <p>Looking for article or guideline for growing your business?</p>
+              <input type="text" placeholder="Search" className={styles.footer_searchbar}/>
+            </div>
           </div>
         </div>
       </div>
-      <div className="footer-lower">
-        <Image src={"/light-logo.png"} alt="Logo" width={200} height={50} />
-        <p>Copyright - Made with Massive Dynamic</p>
+      <div className={styles.footer_lower}>
+        <div className={styles.footer_lower_container}>
+          <Image src={"/light-logo.png"} alt="Logo" width={200} height={40} />
+          <p>Copyright - Made with Massive Dynamic</p>
+        </div>
       </div>
     </footer>
   </>
