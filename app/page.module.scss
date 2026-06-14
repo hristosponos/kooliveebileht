@@ -1,4 +1,5 @@
 $text-light: #6D6D6D;
+$text-dark: #202020;
 
 .grid{
   display: grid;
@@ -83,6 +84,7 @@ $text-light: #6D6D6D;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
   gap: 50px;
   h2{
     font-size: 2rem;
@@ -133,5 +135,96 @@ $text-light: #6D6D6D;
 }
 
 .features_showcase{
-  
+  grid-column: 4 / span 6;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature_card{
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: $text-light;
+  h5{
+    font-size: 52px;
+    font-weight: normal;
+  }
+}
+
+.features{
+  background-color: #EDEDED;
+}
+
+.testimonials{
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  color: #fff;
+  gap: 50px;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("/parallax-testimonial.jpg");
+  background-size: cover;
+  background-position: center;
+  *{
+    width: fit-content;
+  }
+}
+
+.testimonials_title{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  h3{
+    font-size: 2rem;
+  }
+}
+
+.testimonials_author{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.testimonial{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.info_section > :first-child{
+  grid-column: 4 / span 3;
+}
+
+.info_section > :last-child{
+  grid-column: 8 / span 3;
+}
+
+.info_card{
+  h4, h2{
+    font-family: "Roboto", sans-serif;
+  }
+  h2{
+    color: #2B58BF;
+    font-size: 72px;
+  }
+  h4{
+    color: $text-dark;
+    font-size: 1.5rem;
+  }
+  p{
+    font-family: "Open Sans", sans-serif;
+    margin-top: 16px;
+  }
+  button{
+    margin-top: 32px;
+    background: none;
+    border: 2px solid $text-light;
+    padding: 12px 24px;
+    border-radius: 100px;
+    font-family: "Open Sans", sans-serif;
+    color: $text-light;
+    cursor: pointer;
+  }
 }

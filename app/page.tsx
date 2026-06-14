@@ -31,8 +31,8 @@ export default function Home() {
         <button>LEARN MORE</button>
       </div>
     </section>
-    <section className={`${styles.workflow} ${styles.grid}`}>
-      <div className={`${styles.section_container} ${styles.section_padding}`}>
+    <section className={`${styles.workflow} ${styles.grid} ${styles.section_padding}`}>
+      <div className={`${styles.section_container}`}>
         <h2 className="section-title">GET THINGS DONE, EASY!</h2>
         <hr className="section-divider"/>
         <p className="section-description">Among the other things Fibonacci introduced to the Western world was a sequence of num
@@ -66,64 +66,66 @@ export default function Home() {
         </div>
       </div>
     </section>
-    <section className={styles.grid}>
-      <div className={`${styles.section_container} ${styles.section_padding}`}>
-        <h2 className="section-title">WE MANAGE IT FOR YOU</h2>
-        <hr className="section-divider"/>
-        <p className="section-description">Among the other things Fibonacci introduced to the Western world was a sequence of num
-  bers discovered by 6th century Indian mathematicians. In that sequence each number is the
-  sum of the previous two numbers</p>
-      </div>
-      <div className={styles.features_showcase}>
-        <div className="feature-card">
-          <Image src={"/documents.png"} alt="Feature 1" width={50} height={50} />
-          <div className="feature-card-container">
-            <span className="feature-stat">46</span>
-            <span className="feature-description">Documents</span>
-          </div>
+    <section className={`${styles.section_padding} ${styles.features}`}>
+      <div className={styles.grid}>
+        <div className={`${styles.section_container}`}>
+          <h2 className="section-title">WE MANAGE IT FOR YOU</h2>
+          <hr className="section-divider"/>
+          <p className="section-description">Among the other things Fibonacci introduced to the Western world was a sequence of num
+    bers discovered by 6th century Indian mathematicians. In that sequence each number is the
+    sum of the previous two numbers</p>
         </div>
-        <div className="feature-card">
-          <Image src={"/community.png"} alt="Feature 2" width={50} height={50} />
-          <div className="feature-card-container">
-            <span className="feature-stat">206</span>
-            <span className="feature-description">Community</span>
+        <div className={styles.features_showcase}>
+          <div className={styles.feature_card}>
+            <Image src={"/documents.png"} alt="Feature 1" width={50} height={50} />
+            <div className="feature-card-container">
+              <h5 className="feature-stat">46</h5>
+              <span className="feature-description">Documents</span>
+            </div>
           </div>
-        </div>
-        <div className="feature-card">
-          <Image src={"/connections.png"} alt="Feature 3" width={50} height={50} />
-          <div className="feature-card-container">
-            <span className="feature-stat">63</span>
-            <span className="feature-description">Connections</span>
+          <div className={styles.feature_card}>
+            <Image src={"/community.png"} alt="Feature 2" width={50} height={50} />
+            <div className="feature-card-container">
+              <h5 className="feature-stat">206</h5>
+              <span className="feature-description">Community</span>
+            </div>
           </div>
-        </div>
-        <div className="feature-card">
-          <Image src={"/clients.png"} alt="Feature 4" width={50} height={50} />
-          <div className="feature-card-container">
-            <span className="feature-stat">98</span>
-            <span className="feature-description">Clients</span>
+          <div className={styles.feature_card}>
+            <Image src={"/connections.png"} alt="Feature 3" width={50} height={50} />
+            <div className="feature-card-container">
+              <h5 className="feature-stat">63</h5>
+              <span className="feature-description">Connections</span>
+            </div>
+          </div>
+          <div className={styles.feature_card}>
+            <Image src={"/clients.png"} alt="Feature 4" width={50} height={50} />
+            <div className="feature-card-container">
+              <h5 className="feature-stat">98</h5>
+              <span className="feature-description">Clients</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <div className="testimionials-title">
-        <Image src={"/quote.svg"} alt="Testimonials" width={30} height={30} />
+    <section className={`${styles.section_padding} ${styles.testimonials}`}>
+      <div className={styles.testimonials_title}>
+        <Image src={"/quote.svg"} alt="Testimonials" width={48} height={48} />
         <h3>TESTIMONIALS</h3>
       </div>
-      <h3>We’ve been working with Matisia since 2006. It’ been an excellent relationship.</h3>
-      <div className="testimonial-author">
-        <Image src={"/author.jpg"} alt="Author" width={100} height={100} />
+      <h3 className={styles.testimonial}>We’ve been working with Matisia since 2006. It’ been an excellent relationship.</h3>
+      <div className={styles.testimonials_author}>
+        <Image src={"/author.png"} alt="Author" width={70} height={70} />
         <span>Barney Moore</span>
       </div>
     </section>
-    <section>
-      <div className="info-card">
+    <section className={`${styles.grid} ${styles.info_section} ${styles.section_padding}`}>
+      <div className={styles.info_card}>
         <h2>72</h2>
         <h4>PROJECTS COMPLETED</h4>
         <p>Lorem ipsum dolor sit amet, conse ctetur adipis cing elit. Don ec porta, mi ut facilisis ullamcorper, magna risus vehi cula augue, eget faucibus magna massa at justo.</p>
         <button>READ MORE</button>
       </div>
-      <div className="info-card">
+      <div className={styles.info_card}>
         <h2>94</h2>
         <h4>CLIENTS SATISFIED</h4>
         <p>Lorem ipsum dolor sit amet, conse ctetur adipis cing elit. Don ec porta, mi ut facilisis ullamcorper, magna risus vehi cula augue, eget faucibus magna massa at justo.</p>
